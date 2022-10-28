@@ -174,8 +174,54 @@ body {
 
 /* Responsivo */
 
-
 /* Smartphone */
+
+@media (min-width:320px ) and (max-width:424px)  {
+    .header__container {
+        position: initial;
+    }
+
+    .header__container .menu__hiden {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #d5c455;
+        width: 40vw;
+        height: 40vh;
+        display: none;
+        position: fixed;
+        right:80px;
+        top: 40px;
+        border-radius: 10px;
+    }
+
+    .container .left__side {
+        flex-direction: row;
+    }
+    .container .left__side--desc {
+        padding: 10px;   
+    }
+
+    .container .left__side--desc h2 {
+        margin-top: 50px;
+        font-size: 18px;
+    }
+
+    .container .right__side {
+        display: none ;
+    }
+
+    .footer__desc {
+        position:initial;
+    }
+    .footer__desc
+    .footer__desc a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2px;
+    }
+}
 
 @media (min-width:425px ) and (max-width:767px) {
 
@@ -263,6 +309,7 @@ body {
     }
 }
 
+    /* 4K */
 @media (min-width:2560px ) {
 
     .header__container {
